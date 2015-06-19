@@ -39,8 +39,7 @@ class uwsgi(
   $config_file   = '/etc/uwsgi.ini'
   $conf_template = 'uwsgi.ini.erb'
 
-  $default_plugins = ['uwsgi-plugin-python',
-                      'uwsgi-plugin-psgi']
+  $default_plugins = ['uwsgi-plugin-python']
 
   package { $package_name:
     ensure => $package,
